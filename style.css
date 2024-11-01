@@ -1,0 +1,584 @@
+@font-face {
+    font-family: behance;
+    src: url("behance2.ttf");
+}
+@font-face {
+    font-family: xuong;
+    src: url("Xuong.otf");
+}
+
+@font-face {
+    font-family: Aeonik;
+    src: url("Aeonik.ttf");
+}
+@font-face {
+    font-family: santoshi;
+    src: url("santoshi.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "santoshi";
+}
+html,body{
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#page1 ,#page3{
+    height: 100vh;
+    width: 100vw;  
+    background-color: black;
+}
+
+ #nav{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2rem;
+    background-color: transparent;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+#nav img{
+    width: 16rem;
+}
+
+#nav #navright{
+    display: flex;
+    gap: 2rem;
+    font-family: "santoshi";
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+#nav h3{
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+#navright button{
+    padding: 0.6rem 1.8rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: black;
+    font-family: "behance";
+
+}
+#navright i{
+    font-size: 1.3rem;
+    display: none;
+}
+#page1-center{
+    height: 60%;
+    width: 100%;
+    /* margin-top: 10rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10rem;
+}
+#page1-center-left{
+    height: 100%;
+    width: 48%;
+    margin: 2rem 0;
+    padding: 3rem 0rem 0rem 1.5rem;
+    overflow: hidden;
+    /* background-color: rgb(88, 252, 244); */
+}
+#page1-center-left h1{
+    font-size: 3.8rem;
+    line-height: 4.5rem;
+    font-family: "Aeonik";
+    
+}
+#page1-center-left #btns{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+#page1-center-left #btns button{
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+}
+#btns #btn1{
+    background-color: white;
+    color: black;
+    border: none;
+}
+#btns #btn2{
+    background-color: rgba(187, 181, 181, 0.666);
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(60px);
+    border: none;
+
+}
+#page1-center-right{
+    height: 100%;
+    width: 48%;
+    margin: 2rem 0;
+}
+
+#page1-center-right img{
+    height: 100%;
+    width: 100%;
+    margin: 0.5rem 0;
+}#page2-top {
+    background-color: rgb(2, 98, 52);
+    display: flex;
+    padding: 3rem 1.5vw;
+    overflow: hidden;
+    white-space: nowrap; /* Prevent items from wrapping */
+    position: relative; /* For absolute positioning of children */
+}
+
+.marquee {
+    display: flex; /* Use inline-flex for proper alignment */
+    align-items: center;
+    margin-right: 1rem; /* Space between marquess */
+    white-space: nowrap; /* Ensure text doesn't wrap */
+    gap: 20px;
+}
+
+.marquee h1 {
+    font-family: "Aeonik";
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+#page2-top .marquee img {
+    height: 3rem;
+    filter: invert(1) sepia(1) saturate(1000%) hue-rotate(180deg);
+    margin-left: 2rem;
+}
+
+#page2{
+    background-color: #000000;
+}
+#page2 .about{
+    border-bottom: 2px solid white;
+    width: 8rem;
+    font-family: "Aeonik";
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+#page2 #center-content{
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 7rem;
+}
+#center-content h1{
+   font-size: 4.8rem;
+   font-family: "santoshi";
+   /* text-transform: capitalize; */
+   overflow: hidden;
+}
+h1 .a,h1 .b,h1 .c{
+    display: inline-block;
+}
+#center-content h2{
+    font-size: 1.8rem;
+    font-family: "santoshi";
+   text-transform: capitalize;
+ }
+ #show{
+    width: 100%;
+    height: 25rem;
+    /* background-color: rgb(169, 189, 12); */
+    padding: 0.5vh 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap:4vw;
+}
+#show p{
+    width: 40%;
+    height: 80%;
+    font-size: 1.04rem;
+    text-align: justify;
+    font-family: "santoshi";
+    display: flex;
+    align-items: center;
+   
+}
+#show #show-img{
+    width: 25rem;
+    height: 70%;
+    /* background-color: rgb(47, 114, 215); */
+
+}
+#show-img img{
+    width: 100%;
+    height: 100%;
+}
+#page3{
+    /* background-color: rgb(241, 31, 213); */
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: space-between;
+}
+#page3 h2{
+    font-family: "santoshi";
+    font-weight: 100;
+    margin-left: 2rem;
+    margin-top: 6rem;
+    border-bottom: 2px solid white;
+    width: 10rem;
+}
+#page3 #services{
+    height: 48rem;
+    width: 100%;
+    /* background-color: rgb(127, 10, 10); */
+    margin-top: 8rem;
+}
+
+#services1{
+    height: 50%;
+    width: 100%;
+    /* background-color: rgb(0, 68, 255); */
+    display: flex;
+    
+}
+#services1 .photovideo{
+    flex-shrink:0 ;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+
+}
+#line{
+    height: 1px;
+    width: 100%;
+    background: white;
+    margin-top: 10vh;
+}
+.photovideo h1{
+   font-size: 4rem; 
+   
+}
+.photovideo h3{
+    font-size: 3rem; 
+}
+.photovideo h4{
+     letter-spacing: 0.1rem;
+    font-size: 1.1em; 
+ }
+ .photovideo p{
+    font-size: 1.1em; 
+ }
+#services2{
+    height: 50%;
+    width: 100%;
+    /* background-color: rgb(184, 193, 8); */
+}
+
+#page4{
+    /* height: 80vh;      */
+    width: 100%;
+    /* background-color: rgb(229, 229, 21); */
+    overflow-x: hidden;
+    position: relative;
+}
+
+#page4 h1{
+    font-weight: 100;
+    font-size: 1.5rem;  
+    border-bottom: 2px solid white;
+    width: 20rem;
+    margin-left: 2rem;
+}
+
+#collection{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+}
+#page4 .imgcollection1{
+    flex-shrink: 0;
+    height: 20rem;
+    width: 30rem;
+}
+.imgcollection1 img{
+     object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#page4 .imgcollection2{
+    flex-shrink: 0;
+    height: 20rem;
+    width: 30rem;
+}
+.imgcollection2 img{
+     object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#page4 .imgcollection3{
+    flex-shrink: 0;
+    height: 20rem;
+    width: 30rem;
+}
+.imgcollection3 img{
+     object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#page4 .imgcollection4{
+    flex-shrink: 0;
+    height: 20rem;
+    width: 30rem;
+}
+a{
+    text-decoration: none;
+}
+ .imgcollection4 img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#page4 .imgcollection6{
+    flex-shrink: 0;
+    height: 20rem;
+    width: 30rem;
+}
+.imgcollection6 img{
+     object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#page4 .imgcollection7{
+    flex-shrink: 0;
+    height: 20rem;
+    width: 30rem;
+}
+.imgcollection7 img{
+     object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#page4 .imgcollection8{
+    flex-shrink: 0;
+    height: 20rem;
+    width: 30rem;
+}
+.imgcollection8 img{
+     object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#page5{
+    height: 50vh;
+    width: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: end;
+}
+#page5 #connect{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+#connect #img{
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img img{
+    border:3px solid rgb(2, 98, 52);
+    border-radius: 50%;
+    height: 45vh;
+}
+
+#contact{
+    height: 70%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 3rem 5rem; */
+}
+#contact h1{
+    font-size: 5rem;
+    /* margin-top: 6rem; */
+
+}
+#contact h2{
+    font-size: 1rem;
+    font-family: "Aeonik";
+    /* margin-top: 2rem; */
+}
+#contact #social{
+    display: flex;
+    gap: 3rem;
+    height: 5rem;
+    /* background-color: chocolate; */
+    align-items: center;
+    position: relative;
+    /* margin-top: 3rem; */
+}
+#social i{
+    font-size: 1.3rem;
+}
+
+.copyright h2{
+    font-size: 0.3rem;
+}
+@media (max-width:1000px) {
+    #page1-center-left h1{
+        font-size: 6vw;
+        line-height: 4rem;
+    }
+    #page5 #connect{
+      flex-direction: column;
+    }
+    #page5{
+        height: 110vh;
+      
+    }
+    #connect #img{
+        /* height: 100%; */
+        width: 100%;
+    }
+    #contact{
+        width: 100%;
+        align-items: center;   
+    }
+    
+}
+    
+@media (max-width:750px) {
+    #navright h3,#navright button{
+        display: none;
+    }
+    
+    #navright i{
+        display: initial;
+    }
+    #nav img{
+        width: 30vw;
+    }
+    #page1-center{
+        height: 80%;
+        width: 100%;
+        flex-direction: column;  
+        justify-content: space-between;
+        align-items: space-between;
+
+    }
+    #page1-center-left{
+        height: 45%;
+        width: 100%;
+        margin:  0;
+        padding: 0px 3vw;    
+    }
+    #page1-center-left h1{
+        line-height: 3.2rem;    
+    }
+    #page1-center-left #btns{
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    #page1-center-left #btns button{
+        padding: 0.6rem 1rem;
+    }
+    #page1-center-right{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #page1-center-right img{
+        width: 25rem;
+        margin: 0.5rem 0;
+    }
+    #show{
+       flex-direction: column;
+       align-items: center;
+       height: 70vh;
+    }
+    #show p{
+        width: 100%;
+        height: 30%;
+        font-size: 0.9rem;    
+    }
+    #show #show-img{
+        width: 100%;
+        height: 40%;
+        /* background-color: rgb(47, 114, 215); */
+    
+    }
+    #page2-top{
+        padding:2rem 1rem ;
+    }
+}
+@media (max-width:450px) {
+    #nav{
+        padding: 0vw 1vw;
+    }
+    #nav img{
+        width: 43vw;
+    }
+    #page1-center-left h1{
+        font-size: 2.2rem;
+    }
+    #page1-center-right{
+        height: 50%;
+        width: 100%;
+        
+    }
+    #page1-center-right img{
+        width: 100%;
+        margin:0;
+    }
+    #show #show-img{
+        height: 50%;
+        margin-top: 2rem;
+    
+    }
+    #contact h1{
+        font-size: 15vw;
+        /* margin-top: 6rem; */
+    
+    }
+    
+}
+
